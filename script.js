@@ -1,0 +1,5 @@
+prev_results= 'Google Lens Versus Mobile Net    Google Lens: Google Lens is a service available on the internet. It is created by the "Google" company. It is something that can give you information about objects, when you click a picture.   Mobile Net: Mobile Net is a model, also available on the internet. We do not have to program this model as it contains about 1.3 million images already. <br> This project is meant to compare if the results are more accurate on Google Lens or Mobile Net.    Object 1: Fevicol     Mobile Net: Water Bottle    Google Lens: Fevicol    Object 2: Playstation-E1000 Mobile Net: Projector      Google Lens: PSP-E1000     Object 3: Easel    Mobile Net: Crutch      Google Lens: Easel      Object 4: Protractor     Mobile Net: Wall Clock     Google Lens: Protractor ';
+var synth= window.speechSynthesis;
+speak_data= prev_results;
+var utterThis= new SpeechSynthesisUtterance(speak_data);
+synth.speak(utterThis);
